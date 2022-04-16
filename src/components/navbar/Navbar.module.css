@@ -3,19 +3,25 @@ li {
 }
 
 .logo i {
-    color: white;
+    color: gray;
     font-size: 4.8rem;
     margin-top: 2.4rem;
     margin-bottom: 4.4rem;
 }
 
 .sidebar {
-    background: #050533;
+    background: white;
     height: 100vh;
     width: 6%;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+}
+
+.sidebar_dark {
+    background: #050533;
+    color: white !important;
 }
 
 .nav_list {
@@ -23,8 +29,12 @@ li {
 }
 
 .nav_list i {
-    color: white;
+    color: gray;
     margin-bottom: 3.6rem;
+}
+
+.nav_list_dark {
+    color: white;
 }
 
 .nav_list i:hover {
