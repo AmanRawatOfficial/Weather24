@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const weatherSlice = createSlice({
     name: "weather",
     initialState: {
-        weatherData: null
+        weatherData: 0
     },
     reducers: {
         setWeatherData: (state, action) => {
@@ -12,5 +12,5 @@ export const weatherSlice = createSlice({
     }
 })
 
-export const { setWeatherData } = darkmodeSlice.actions
-export default darkmodeSlice.reducer
+export const { setWeatherData } = weatherSlice.actions
+export default weatherSlice.reducer
