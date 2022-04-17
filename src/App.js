@@ -1,9 +1,13 @@
-import Navbar from "./components/navbar/Navbar"
+import Dashboard from "./components/dashboard/Dashboard";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
-    return(
-        <Navbar />
-    )
+    return (
+        <>
+            <Navbar />
+            <Dashboard />
+        </>
+    );
 }
 
-export default App
+export default App;

@@ -2,7 +2,7 @@ li {
     list-style: none;
 }
 
-.logo i {
+.logo_icon {
     color: gray;
     font-size: 4.8rem;
     margin-top: 2.4rem;
@@ -21,23 +21,22 @@ li {
 
 .sidebar_dark {
     background: #050533;
-    color: white !important;
 }
 
 .nav_list {
     font-size: 3.6rem;
 }
 
-.nav_list i {
+.nav_list_icons {
     color: gray;
     margin-bottom: 3.6rem;
 }
 
-.nav_list_dark {
-    color: white;
+.nav_list_icons:hover {
+    color: orange;
 }
 
-.nav_list i:hover {
-    color: orange;
+.nav_list_dark {
+    color: white;
 }
 

@@ -6,35 +6,37 @@ function Navbar() {
 
     const isDarkmodeOn = useSelector(state => state.darkmode.isDark)
     const dispatch = useDispatch()
+
+    // DARKMODE
     const darkmodeCheck = isDarkmodeOn ? Styles.sidebar_dark : "" // darkmode swithcing
-    console.log(isDarkmodeOn)
+    const darkmodeCheckFont = isDarkmodeOn ? Styles.nav_list_dark : "" // darkmode switcing for white fonts
 
     return (
         <nav className={`${Styles.sidebar} ${darkmodeCheck}`}>
             <div className={Styles.logo_content}>
                 <div className={Styles.logo}>
-                    <i className={`bx bx-cloud ${darkmodeCheck}`}></i>
+                    <i className={`bx bx-cloud ${Styles.logo_icon} ${darkmodeCheckFont}`}></i>
                 </div>
             </div>
             <ul className={`${Styles.nav_list}`}>
                 <li>
                     <a href="#">
-                        <i className={`bx bx-grid-alt ${darkmodeCheck}`}></i>
+                        <i className={`bx bx-grid-alt ${Styles.nav_list_icons} ${darkmodeCheckFont}`}></i>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i className={`bx bx-map ${darkmodeCheck}`}></i>
+                        <i className={`bx bx-map ${Styles.nav_list_icons} ${darkmodeCheckFont}`}></i>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i className={`bx bx-calendar ${darkmodeCheck}`}></i>
+                        <i className={`bx bx-calendar ${Styles.nav_list_icons} ${darkmodeCheckFont}`}></i>
                     </a>
                 </li>
                 <li onClick={() => dispatch(toggleDarkmode())}>
                     <a href="#">
-                        <i className={`bx bx-moon ${darkmodeCheck}`}></i>
+                        <i className={`bx bx-moon ${Styles.nav_list_icons} ${darkmodeCheckFont}`}></i>
                     </a>
                 </li>
             </ul>
