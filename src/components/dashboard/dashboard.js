@@ -1,5 +1,6 @@
-import Styles from "./Dashboard.module.css"
 import { useSelector } from "react-redux"
+import Styles from "./Dashboard.module.css"
+import Weather from "./Weather"
 
 function Dashboard() {
 
@@ -8,7 +9,7 @@ function Dashboard() {
 
     return(
         <main className={`${Styles.dashboard} ${darkmodeCheck}`}>
-            <h1>Dashboard</h1>
+            <Weather />
         </main>
     )
 }
