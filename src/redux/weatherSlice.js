@@ -7,7 +7,7 @@ export const weatherSlice = createSlice({
             {
                 temp: 0,
                 weather: {
-                    description: "",
+                    description: "Loading...",
                 },
             },
         ],

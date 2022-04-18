@@ -7,7 +7,9 @@ function Weather() {
     const currentTemp = useSelector((state) => state.weather.weatherData);
     const dispatch = useDispatch();
 
+    // Weather Data Fetching
     useEffect(() => {
+        // Getting Latitude and longitute value using geolocation api (inbuilt-browser)
         navigator.geolocation.getCurrentPosition(function (location) {
             fetch(
                 `https://api.weatherbit.io/v2.0/current?lat=${location.coords.latitude}&lon=${location.coords.longitude}&key=db73e48c3eea4c5c8ae4b44ef77dfe46`
