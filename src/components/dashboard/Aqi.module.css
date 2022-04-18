@@ -1,5 +1,6 @@
 .aqi_data {
-    margin-top: 1.8rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.4rem;
 }
 
 .aqi_data_current {
@@ -16,4 +17,20 @@
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
     color: black;
+}
+
+.aqi_desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0e0e57;
+    border-radius: 12px;
+    padding: 1rem 0;
+    margin-right: 12rem;
+}
+
+.aqi_desc p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
 }

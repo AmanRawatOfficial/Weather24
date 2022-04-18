@@ -12,7 +12,6 @@ function Dashboard() {
     // Api logic
     const dispatch = useDispatch();
     const weatherInfo = useSelector((state) => state.weather.weatherData);
-    console.log(weatherInfo);
 
     // https request
     useEffect(() => {

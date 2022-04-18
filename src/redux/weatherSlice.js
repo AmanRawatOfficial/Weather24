@@ -6,10 +6,13 @@ export const weatherSlice = createSlice({
         weatherData: [
             {
                 temp: 0,
-                aqi: "Loading...",
+                aqi: 0,
                 weather: {
-                    description: "Loading...",
+                    description: 0,
                 },
+                pres: 0,
+                vis: 0,
+                rh: 0
             },
         ],
     },
