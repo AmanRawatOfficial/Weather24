@@ -10,8 +10,8 @@ function Aqi(props) {
         >
             <div className={`${Styles.aqi_data}`}>
                 <p className={`${Styles.aqi_data_current}`}>
-                    {`${props.temp}`}°C
-                    <span>{`${props.desc}`}</span>
+                    {`${props.aqi}`}
+                    <span>AQI</span>
                 </p>
             </div>
         </DashboardComponent>

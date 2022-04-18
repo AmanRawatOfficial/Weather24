@@ -35,7 +35,7 @@ function Dashboard() {
                 temp={weatherInfo[0].temp}
                 desc={weatherInfo[0].weather.description}
             />
-            <Aqi />
+            <Aqi aqi={weatherInfo[0].aqi}/>
         </main>
     );
 }
