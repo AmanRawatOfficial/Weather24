@@ -8,3 +8,21 @@
     background-image: url(../../assets/images/cloudy-sky.jpg);
     background-size: 100%;
 }
+
+.weather_heading {
+    display: flex;
+    align-items: center;;
+}
+
+.weather_logo {
+    width: 2.8rem;
+    height: 2.8rem;
+    color: #e67e22;
+    font-size: 2.4rem;
+    margin-right: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+}

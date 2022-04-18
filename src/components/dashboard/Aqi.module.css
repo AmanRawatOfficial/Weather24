@@ -1,0 +1,19 @@
+.aqi_data {
+    margin-top: 1.8rem;
+}
+
+.aqi_data_current {
+    font-size: 3rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.aqi_data_current span {
+    font-size: 1.2rem;
+    margin-left: 0.8rem;
+    background-color: rgba(188, 235, 71, 0.836);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    color: black;
+}

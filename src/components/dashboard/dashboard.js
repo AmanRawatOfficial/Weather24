@@ -1,17 +1,18 @@
-import { useSelector, useDispatch } from "react-redux"
+import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { setWeatherData } from "../../redux/weatherSlice";
-import Aqi from "./Aqi"
-import Styles from "./Dashboard.module.css"
-import Weather from "./Weather"
+import Aqi from "./Aqi";
+import Styles from "./Dashboard.module.css";
+import Weather from "./Weather";
 
 function Dashboard() {
     // Darkmode toggling
-    const isDarkmodeOn = useSelector(state => state.darkmode.isDark)
-    const darkmodeCheck = isDarkmodeOn ? Styles.dashboard_dark : ""
+    const isDarkmodeOn = useSelector((state) => state.darkmode.isDark);
+    const darkmodeCheck = isDarkmodeOn ? Styles.dashboard_dark : "";
     // Api logic
-    const dispatch = useDispatch()
-    const currentTemp = useSelector((state) => state.weather.weatherData);
+    const dispatch = useDispatch();
+    const weatherInfo = useSelector((state) => state.weather.weatherData);
+    console.log(weatherInfo);
 
     // https request
     useEffect(() => {
@@ -23,15 +24,19 @@ function Dashboard() {
                 .then((res) => res.json())
                 .then((data) => {
                     dispatch(setWeatherData(data));
-                });
+                })
+                .catch((err) => console.error(err));
         });
-    }, []);
+    },[dispatch]);
 
-    return(
+    return (
         <main className={`${Styles.dashboard} ${darkmodeCheck}`}>
-            <Weather temp={currentTemp[0].temp} desc={currentTemp[0].weather.description}/>
+            <Weather
+                temp={weatherInfo[0].temp}
+                desc={weatherInfo[0].weather.description}
+            />
             <Aqi />
         </main>
-    )
+    );
 }
-export default Dashboard
+export default Dashboard;
