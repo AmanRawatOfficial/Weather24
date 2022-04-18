@@ -1,6 +1,7 @@
 .dashboard {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
 }
 
 .dashboard_dark {

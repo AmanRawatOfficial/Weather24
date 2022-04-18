@@ -1,10 +1,10 @@
+import DashboardComponent from "../ui/DashboardComponent"
+
 function Aqi() {
     return (
-        <div>
-            <div>
-                
-            </div>
-        </div>
+        <DashboardComponent>
+            
+        </DashboardComponent>
     )
 }
 

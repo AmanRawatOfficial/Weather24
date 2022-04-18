@@ -1,28 +1,9 @@
+import DashboardComponent from "../ui/DashboardComponent";
 import Styles from "./Weather.module.css";
-import { useSelector, useDispatch } from "react-redux";
-import { useEffect } from "react";
-import { setWeatherData } from "../../redux/weatherSlice";
 
-function Weather() {
-    const currentTemp = useSelector((state) => state.weather.weatherData);
-    const dispatch = useDispatch();
-
-    // Weather Data Fetching
-    useEffect(() => {
-        // Getting Latitude and longitute value using geolocation api (inbuilt-browser)
-        navigator.geolocation.getCurrentPosition(function (location) {
-            fetch(
-                `https://api.weatherbit.io/v2.0/current?lat=${location.coords.latitude}&lon=${location.coords.longitude}&key=db73e48c3eea4c5c8ae4b44ef77dfe46`
-            )
-                .then((res) => res.json())
-                .then((data) => {
-                    dispatch(setWeatherData(data));
-                });
-        });
-    }, []);
-
+function Weather(props) {
     return (
-        <div className={`${Styles.weather}`}>
+        <DashboardComponent>
             <div className={`${Styles.weather_heading}`}>
                 <div className={`${Styles.weather_logo}`}>
                     <i class="bx bxs-cloud"></i>
@@ -34,10 +15,11 @@ function Weather() {
             </div>
             <div className={`${Styles.weather_data}`}>
                 <p className={`${Styles.weather_data_current}`}>
-                    {`${currentTemp[0].temp}`}°C<span>{`${currentTemp[0].weather.description}`}</span>
+                    {`${props.temp}`}°C
+                    <span>{`${props.desc}`}</span>
                 </p>
             </div>
-        </div>
+        </DashboardComponent>
     );
 }
 
