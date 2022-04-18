@@ -14,8 +14,7 @@ function Weather() {
             )
                 .then((res) => res.json())
                 .then((data) => {
-                    console.log(data)
-                    dispatch(setWeatherData(data.data[0].temp));
+                    dispatch(setWeatherData(data));
                 });
         });
     }, []);
@@ -33,7 +32,7 @@ function Weather() {
             </div>
             <div className={`${Styles.weather_data}`}>
                 <p className={`${Styles.weather_data_current}`}>
-                    {`${currentTemp}`}°C<span>11°C</span>
+                    {`${currentTemp[0].temp}`}°C<span>{`${currentTemp[0].weather.description}`}</span>
                 </p>
             </div>
         </div>
