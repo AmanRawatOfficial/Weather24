@@ -21,7 +21,7 @@ function Weather() {
             <div className={`${Styles.weather_info}`}>
                 <div className={`${Styles.weather_info_box}`}>
                     <p>Pressure</p>
-                    <p>{`${weatherData[0].pres}`}mb</p>
+                    <p>{`${Math.floor(weatherData[0].pres)}`}mb</p>
                 </div>
                 <div className={`${Styles.weather_info_box}`}>
                     <p>Visibility</p>
