@@ -3,7 +3,15 @@ import { createSlice } from "@reduxjs/toolkit";
 export const weatherHourSlice = createSlice({
     name: "weatherHour",
     initialState: {
-        weatherHourData: "nothing right now"
+        weatherHourData: {
+            list: [{
+                main: {
+                    temp: 41
+                },
+                dt: 0,
+                weather: [{id: 0}]
+            }]
+        }
     },
     reducers: {
         setWeatherHourData: (state, action) => {

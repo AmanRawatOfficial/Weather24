@@ -37,8 +37,8 @@ function Dashboard() {
             )
                 .then((hourRes) => hourRes.json())
                 .then((hourData) => {
+                    console.log("from fetch", hourData)
                     dispatch(setWeatherHourData(hourData));
-                    console.log(hourData);
                 })
                 .catch((hourErr) => console.error(hourErr));
         });
