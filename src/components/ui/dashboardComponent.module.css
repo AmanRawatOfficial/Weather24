@@ -7,6 +7,7 @@
     padding: 3.6rem;
     background-image: url(../../assets/images/cloudy-sky.jpg);
     background-size: 100%;
+    align-self: start;
 }
 
 .weather_heading {

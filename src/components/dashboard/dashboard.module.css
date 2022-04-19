@@ -1,7 +1,7 @@
 .dashboard {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.05);
-    display: flex;
+    width: 80rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .dashboard_dark {
