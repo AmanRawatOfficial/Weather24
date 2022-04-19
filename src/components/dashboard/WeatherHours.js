@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import Styles from "./WeatherHours.module.css"
 
 function WeatherHours() {
     const weatherHourData = useSelector(
@@ -9,9 +10,9 @@ function WeatherHours() {
     const arrayList = weatherHourData.list.slice(0,4).map(list => <p>{list.main.temp}</p>)
 
     return (
-        <div>
-            <div>
-                <h3>How's the temperature in next 3 hours?</h3>
+        <div className={Styles.hour_weather}>
+            <div className={Styles.hour_weather_header}>
+                <h3 className={Styles.hour_weather_heading}>How's the temperature in next 3 hours?</h3>
                 {arrayList}
             </div>
         </div>

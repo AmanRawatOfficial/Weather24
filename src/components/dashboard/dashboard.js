@@ -6,6 +6,7 @@ import Aqi from "./Aqi";
 import Styles from "./Dashboard.module.css";
 import Weather from "./Weather";
 import WeatherHours from "./WeatherHours";
+import WeatherTommorow from "./WeatherTommorow";
 
 function Dashboard() {
     // Darkmode toggling
@@ -33,11 +34,11 @@ function Dashboard() {
 
             // Data fetching for next 3 hours weather forecast
             fetch(
-                `https://api.openweathermap.org/data/2.5/forecast?lat=${location.coords.latitude}&lon=${location.coords.longitude}&appid=9fa2c0491f3eeae40b6bb15320142ebf`
+                `https://api.openweathermap.org/data/2.5/forecast?lat=${location.coords.latitude}&lon=${location.coords.longitude}&units=metric&appid=9fa2c0491f3eeae40b6bb15320142ebf`
             )
                 .then((hourRes) => hourRes.json())
                 .then((hourData) => {
-                    console.log("from fetch", hourData)
+                    console.log("from fetch", hourData);
                     dispatch(setWeatherHourData(hourData));
                 })
                 .catch((hourErr) => console.error(hourErr));
@@ -46,12 +47,17 @@ function Dashboard() {
 
     return (
         <main className={`${Styles.dashboard} ${darkmodeCheck}`}>
-            <Weather
-                temp={weatherInfo[0].temp}
-                desc={weatherInfo[0].weather.description}
-            />
-            <Aqi aqi={weatherInfo[0].aqi} />
-            <WeatherHours />
+            <div className={Styles.dashboard_first_row}>
+                <Weather
+                    temp={weatherInfo[0].temp}
+                    desc={weatherInfo[0].weather.description}
+                />
+                <Aqi aqi={weatherInfo[0].aqi} />
+            </div>
+            <div className={Styles.dashboard_second_row}>
+                <WeatherHours />
+                <WeatherTommorow />
+            </div>
         </main>
     );
 }

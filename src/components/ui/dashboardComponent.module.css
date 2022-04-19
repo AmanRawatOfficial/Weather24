@@ -1,9 +1,9 @@
 .weather {
     height: 20rem;
-    width: 30rem;
+    width: 35rem;
     border-radius: 12px;
-    margin-left: 8rem;
-    margin-top: 8.3rem;
+    margin-left: 4rem;
+    margin-top: 12rem;
     padding: 3.6rem;
     background-image: url(../../assets/images/cloudy-sky.jpg);
     background-size: 100%;

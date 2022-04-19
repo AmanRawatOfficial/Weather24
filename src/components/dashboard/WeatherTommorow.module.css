@@ -1,0 +1,31 @@
+.weather_tommorow {
+    background-image: linear-gradient(
+            rgba(188, 235, 71, 0.336),
+            rgba(188, 235, 71, 0.936)
+        ),
+        url(../../assets/images/women-rain.jpg);
+    background-size: 80%;
+    border-radius: 12px;
+    margin-top: 4rem;
+    margin-left: 4rem;
+    width: 22.5rem;
+    color: black;
+    padding-right: 12.5rem;
+}
+
+.weather_tommorow_heading, 
+.weather_tommorow_temp,
+.weather_tommorow_desc {
+    margin-left: 2rem;
+}
+
+.weather_tommorow_heading {
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.weather_tommorow_temp {
+    margin-top: 10rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+}

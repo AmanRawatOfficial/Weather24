@@ -1,10 +1,12 @@
 .dashboard {
-    width: 80rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    width: 65%;
 }
 
 .dashboard_dark {
     background: #020221;
     color: white;
+}
+
+.dashboard_first_row, .dashboard_second_row {
+    display: flex;
 }
