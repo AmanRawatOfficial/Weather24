@@ -12,7 +12,7 @@ function WeatherHours() {
     return (
         <div className={Styles.hour_weather}>
             <div className={Styles.hour_weather_header}>
-                <h3 className={Styles.hour_weather_heading}>How's the temperature in next 3 hours?</h3>
+                <h3 className={Styles.hour_weather_heading}>How's the temperature<br></br> in next 3 hours?</h3>
                 {arrayList}
             </div>
         </div>

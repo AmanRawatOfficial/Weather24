@@ -1,10 +1,12 @@
 .weather_tommorow {
     background-image: linear-gradient(
-            rgba(188, 235, 71, 0.336),
-            rgba(188, 235, 71, 0.936)
+            rgba(188, 235, 71, 0.2),
+            rgba(188, 235, 71, 1)
         ),
-        url(../../assets/images/women-rain.jpg);
-    background-size: 80%;
+        url(../../assets/images/sunny-day.jpg);
+    background-size: 220%;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 12px;
     margin-top: 4rem;
     margin-left: 4rem;
