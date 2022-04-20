@@ -7,17 +7,18 @@
     /* background-size: 220%;
     background-position: center;
     background-repeat: no-repeat; */
-    background-color: rgba(188, 236, 72, 1);
+    /* background-color: rgba(188, 235, 71, 0.836); */
+    background: rgba(255, 166, 0, 0.452);
     border-radius: 12px;
     margin-top: 4rem;
     margin-left: 3.6rem;
     width: 40%;
-    color: black;
-    padding-right: 12.5rem;
+    padding-right: 8rem;
 }
 
 .weather_tommorow_container {
     margin: 3.6rem;
+    width: 100%;
 }
 
 .weather_tommorow_heading {
@@ -29,4 +30,8 @@
     margin-top: 7.2rem;
     font-size: 2.4rem;
     font-weight: 600;
+}
+
+.weather_tommorow_desc {
+    font-weight: 500;
 }

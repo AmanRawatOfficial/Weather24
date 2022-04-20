@@ -7,6 +7,7 @@ import Styles from "./Dashboard.module.css";
 import Weather from "./Weather";
 import WeatherHours from "./WeatherHours";
 import WeatherTommorow from "./WeatherTommorow";
+import { setWeatherDailyData } from "../../redux/weatherDailySlice";
 
 function Dashboard() {
     // Darkmode toggling
@@ -28,7 +29,6 @@ function Dashboard() {
             )
                 .then((res) => res.json())
                 .then((data) => {
-                    console.log("From Current Fetch", data)
                     dispatch(setWeatherData(data));
                 })
                 .catch((err) => console.error(err));
@@ -39,7 +39,6 @@ function Dashboard() {
             )
                 .then((hourRes) => hourRes.json())
                 .then((hourData) => {
-                    console.log("from Hour Fetch", hourData);
                     dispatch(setWeatherHourData(hourData));
                 })
                 .catch((hourErr) => console.error(hourErr));
@@ -50,7 +49,7 @@ function Dashboard() {
             )
                 .then((dailyRes) => dailyRes.json())
                 .then((dailyRes) => {
-                    console.log("From Daily Fetch", dailyRes);
+                    dispatch(setWeatherDailyData(dailyRes))
                 })
                 .catch((dailyErr) => console.error(dailyErr));
         });

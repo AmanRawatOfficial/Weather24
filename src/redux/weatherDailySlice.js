@@ -7,7 +7,10 @@ export const weatherDailySlice = createSlice({
             data: [{
 
             }, {
-                temp: 0
+                temp: 0,
+                weather: {
+                    description: "Loading.."
+                }
             }]
         }
     },

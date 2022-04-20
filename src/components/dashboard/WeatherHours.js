@@ -9,9 +9,9 @@ function WeatherHours() {
     function timeFormat(time) {
         let timeDescription = ""
         const hour = time.slice(11,13)
-        if (hour <= 12) {
+        if (hour < 12) {
             timeDescription = " AM"
-        } else if (hour > 12) {
+        } else if (hour >= 12) {
             timeDescription = " PM"
         }
         let newTime = time.slice(11, 16)
@@ -19,7 +19,7 @@ function WeatherHours() {
     }
 
     const arrayList = weatherHourData.list.slice(0, 4).map((list) => (
-        <div className={Styles.hour_weather_data_item}>
+        <div key={list.dt} className={Styles.hour_weather_data_item}>
             <div className={Styles.hour_weather_data_item_container}>
                 <p className={Styles.hour_weather_data_item_temp}>{Math.round(list.main.temp)}°C</p>
                 <div className={Styles.hour_weather_data_item_hm}>
