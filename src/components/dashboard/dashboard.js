@@ -28,6 +28,7 @@ function Dashboard() {
             )
                 .then((res) => res.json())
                 .then((data) => {
+                    console.log("From Current Fetch", data)
                     dispatch(setWeatherData(data));
                 })
                 .catch((err) => console.error(err));
@@ -38,16 +39,26 @@ function Dashboard() {
             )
                 .then((hourRes) => hourRes.json())
                 .then((hourData) => {
-                    console.log("from fetch", hourData);
+                    console.log("from Hour Fetch", hourData);
                     dispatch(setWeatherHourData(hourData));
                 })
                 .catch((hourErr) => console.error(hourErr));
+
+            // Data fetching for Daily weather forecast
+            fetch(
+                `https://api.weatherbit.io/v2.0/forecast/daily?lat=${location.coords.latitude}&lon=${location.coords.longitude}&days=5&key=db73e48c3eea4c5c8ae4b44ef77dfe46`
+            )
+                .then((dailyRes) => dailyRes.json())
+                .then((dailyRes) => {
+                    console.log("From Daily Fetch", dailyRes);
+                })
+                .catch((dailyErr) => console.error(dailyErr));
         });
     }, [dispatch]);
 
     return (
         <main className={`${Styles.dashboard} ${darkmodeCheck}`}>
-            <div>
+            <div className={Styles.dashboard_container}>
                 <div className={Styles.dashboard_first_row}>
                     <Weather
                         temp={weatherInfo[0].temp}

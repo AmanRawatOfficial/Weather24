@@ -1,5 +1,9 @@
 .dashboard {
-    width: 65%;
+    width: 100%;
+}
+
+.dashboard_container {
+    width: 70%;
 }
 
 .dashboard_dark {
