@@ -18,7 +18,6 @@ function WeatherHours() {
         return newTime + timeDescription
     }
 
-    console.log("from weatherC", weatherHourData);
     const arrayList = weatherHourData.list.slice(0, 4).map((list) => (
         <div className={Styles.hour_weather_data_item}>
             <div className={Styles.hour_weather_data_item_container}>

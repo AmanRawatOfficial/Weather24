@@ -1,6 +1,11 @@
+import { useSelector } from "react-redux";
 import Styles from "./WeatherTommorow.module.css";
 
 function WeatherTommorow() {
+
+    const weatherDaily = useSelector(state => state.weatherDaily.weatherDailyData)
+    console.log("WeatherDaily", weatherDaily)
+
     return (
         <div className={Styles.weather_tommorow}>
             <div className={Styles.weather_tommorow_container}>
