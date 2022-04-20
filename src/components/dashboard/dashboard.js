@@ -8,6 +8,7 @@ import Weather from "./Weather";
 import WeatherHours from "./WeatherHours";
 import WeatherTommorow from "./WeatherTommorow";
 import { setWeatherDailyData } from "../../redux/weatherDailySlice";
+import Sidebar from "./sidebar/Sidebar";
 
 function Dashboard() {
     // Darkmode toggling
@@ -29,6 +30,7 @@ function Dashboard() {
             )
                 .then((res) => res.json())
                 .then((data) => {
+                    console.log("Current Weather", data)
                     dispatch(setWeatherData(data));
                 })
                 .catch((err) => console.error(err));
@@ -70,6 +72,7 @@ function Dashboard() {
                     <WeatherTommorow />
                 </div>
             </div>
+            <Sidebar />
         </main>
     );
 }
