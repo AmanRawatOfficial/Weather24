@@ -47,16 +47,18 @@ function Dashboard() {
 
     return (
         <main className={`${Styles.dashboard} ${darkmodeCheck}`}>
-            <div className={Styles.dashboard_first_row}>
-                <Weather
-                    temp={weatherInfo[0].temp}
-                    desc={weatherInfo[0].weather.description}
-                />
-                <Aqi aqi={weatherInfo[0].aqi} />
-            </div>
-            <div className={Styles.dashboard_second_row}>
-                <WeatherHours />
-                <WeatherTommorow />
+            <div>
+                <div className={Styles.dashboard_first_row}>
+                    <Weather
+                        temp={weatherInfo[0].temp}
+                        desc={weatherInfo[0].weather.description}
+                    />
+                    <Aqi aqi={weatherInfo[0].aqi} />
+                </div>
+                <div className={Styles.dashboard_second_row}>
+                    <WeatherHours />
+                    <WeatherTommorow />
+                </div>
             </div>
         </main>
     );

@@ -1,13 +1,12 @@
 .weather {
-    height: 20rem;
-    width: 35rem;
     border-radius: 12px;
     margin-left: 4rem;
     margin-top: 12rem;
     padding: 3.6rem;
     background-image: url(../../assets/images/cloudy-sky.jpg);
+    background-position: center;
     background-size: 100%;
-    align-self: start;
+    width: 50%;
 }
 
 .weather_heading {

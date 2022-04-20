@@ -1,24 +1,23 @@
 .weather_tommorow {
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
             rgba(188, 235, 71, 0.2),
             rgba(188, 235, 71, 1)
         ),
-        url(../../assets/images/sunny-day.jpg);
-    background-size: 220%;
+        url(../../assets/images/sunny-day.jpg); */
+    /* background-size: 220%;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background-color: rgba(188, 236, 72, 1);
     border-radius: 12px;
     margin-top: 4rem;
-    margin-left: 4rem;
-    width: 22.5rem;
+    margin-left: 3.6rem;
+    width: 40%;
     color: black;
     padding-right: 12.5rem;
 }
 
-.weather_tommorow_heading, 
-.weather_tommorow_temp,
-.weather_tommorow_desc {
-    margin-left: 2rem;
+.weather_tommorow_container {
+    margin: 3.6rem;
 }
 
 .weather_tommorow_heading {
@@ -27,7 +26,7 @@
 }
 
 .weather_tommorow_temp {
-    margin-top: 10rem;
+    margin-top: 7.2rem;
     font-size: 2.4rem;
     font-weight: 600;
 }

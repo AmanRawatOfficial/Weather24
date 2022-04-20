@@ -6,9 +6,10 @@ export const weatherHourSlice = createSlice({
         weatherHourData: {
             list: [{
                 main: {
-                    temp: 41
+                    temp: 41,
+                    humidity: 2,
                 },
-                dt: 0,
+                dt_txt: "",
                 weather: [{id: 0}]
             }]
         }

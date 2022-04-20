@@ -1,10 +1,9 @@
 .hour_weather {
-    background: purple;
+    /* background: purple; */
     margin-left: 4rem;
     margin-top: 4rem;
     border-radius: 12px;
-    padding-bottom: 8rem;
-    width: 47.5rem;
+    width: 60%;
 }
 
 .hour_weather_header {
@@ -14,6 +13,47 @@
 .hour_weather_heading {
     font-size: 2rem;
     font-weight: 600;
-    margin-left: 4rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
+}
+
+.hour_weather_data {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.hour_weather_data_item {
+    padding: 2rem 0;
+    background-color: rgba(128, 128, 128, 0.244);
+    border-radius: 12px;
+    margin-top: 3.6rem;
+}
+
+.hour_weather_data_item_temp {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.hour_weather_data_item_hm {
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hour_weather_data_item_container,
+.hour_weather_data_item_time {
+    margin: 0 2rem;
+}
+
+.hour_weather_data_item_time {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.hour_weather_data_item_container {
+    display: flex;
+    gap: 0.6rem;
 }
