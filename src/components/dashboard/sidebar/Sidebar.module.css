@@ -1,5 +1,7 @@
 .sidebar {
-    background: rgba(196, 196, 196, 0.265);
+    background: rgba(128, 128, 128, 0.244);
     width: 100%;
     margin-left: 4rem;
+    display: flex; 
+    flex-direction: column;
 }
