@@ -7,6 +7,8 @@ function OtherData() {
     const windSpeed = weatherData[0].wind_spd
     const windDesc = weatherData[0].wind_cdir_full
     const uvi = (weatherData[0].uv).toFixed(1)
+
+    // Description changing logic
     let uviDesc = ""
     if (uvi <= 2) {
         uviDesc = "Low"
