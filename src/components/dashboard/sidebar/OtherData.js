@@ -17,7 +17,7 @@ function OtherData() {
     } else if (uvi <= 7) {
         uviDesc = "High"
     } else if (uvi <= 10) {
-        uviDesc = "Very High"
+        uviDesc = "Very high"
     } else {
         uviDesc = "Extreme"
     }
@@ -30,7 +30,7 @@ function OtherData() {
                 </div>
                 <div className={Styles.other_data_main_info}>
                     <p className={Styles.other_data_main_info_uv}>
-                        {uvi} UVI <span className={Styles.other_data_main_desc}>{uviDesc}</span>
+                        {uvi} UVI <span className={Styles.other_data_main_desc}>{uviDesc.toLowerCase()}</span>
                     </p>
                     <p>
                         {uviDesc} risk of from UV Rays

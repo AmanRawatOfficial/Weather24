@@ -8,10 +8,10 @@ export const weatherSlice = createSlice({
                 temp: 0,
                 aqi: 0,
                 uv: 0,
-                wind_spd: "Loading...",
+                wind_spd: 0,
                 wind_cdir_full: "Loading...",
                 weather: {
-                    description: 0,
+                    description: "Loading...",
                 },
                 pres: 0,
                 vis: 0,

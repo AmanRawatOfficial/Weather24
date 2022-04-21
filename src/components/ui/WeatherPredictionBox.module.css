@@ -1,0 +1,42 @@
+.weather_prediction_primary_box {
+    display: flex;
+    align-items: center;
+}
+
+.weather_prediction_img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.weather_prediction_month {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.weather_prediction_info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.8rem;
+}
+
+.weather_prediction_desc {
+    font-weight: 700;
+}
+
+.weather_prediction_primary {
+    margin-left: 1rem;
+}
+
+.weather_prediction_img_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather_prediction_secondary {
+    margin-left: 6rem;
+    color: rgb(255, 179, 39);
+    font-size: 1.4rem;
+    font-weight: 600;
+}

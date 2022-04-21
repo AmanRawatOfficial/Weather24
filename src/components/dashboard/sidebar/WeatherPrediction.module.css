@@ -1,5 +1,4 @@
 .weather_prediction {
-    background: rgb(21, 7, 68);
     margin: 0 4rem 4rem 4rem;
     height: 52%;
     display: grid;
@@ -8,6 +7,9 @@
 }
 
 .weather_prediction_box {
-    background: wheat;
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 12px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0.2rem 0.4rem 0.4rem rgba(0, 0, 0, 0.103);
 }
