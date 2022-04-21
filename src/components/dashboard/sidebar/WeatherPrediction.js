@@ -38,6 +38,7 @@ function WeatherPrediction() {
                     maxTemp={tempRounder(weatherData.data[2].max_temp)}
                     minTemp={tempRounder(weatherData.data[2].min_temp)}
                     icon={weatherData.data[2].weather.icon}
+                    desc={weatherData.data[2].weather.description}
                 />
             </div>
             <div className={Styles.weather_prediction_box}>
@@ -47,6 +48,7 @@ function WeatherPrediction() {
                     maxTemp={tempRounder(weatherData.data[3].max_temp)}
                     minTemp={tempRounder(weatherData.data[3].min_temp)}
                     icon={weatherData.data[3].weather.icon}
+                    desc={weatherData.data[3].weather.description}
                 />
             </div>
             <div className={Styles.weather_prediction_box}>
@@ -56,6 +58,7 @@ function WeatherPrediction() {
                     maxTemp={tempRounder(weatherData.data[4].max_temp)}
                     minTemp={tempRounder(weatherData.data[4].min_temp)}
                     icon={weatherData.data[4].weather.icon}
+                    desc={weatherData.data[4].weather.description}
                 />
             </div>
         </div>

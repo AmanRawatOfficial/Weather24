@@ -1,6 +1,7 @@
 .weather_prediction_primary_box {
     display: flex;
     align-items: center;
+    width: 12rem;
 }
 
 .weather_prediction_img {
@@ -35,7 +36,8 @@
 }
 
 .weather_prediction_secondary {
-    margin-left: 6rem;
+    margin-left: 5rem;
+    margin-right: 3rem;
     color: rgb(255, 179, 39);
     font-size: 1.4rem;
     font-weight: 600;

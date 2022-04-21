@@ -17,7 +17,7 @@ function WeatherPredictionBox(props) {
                         <h5 className={Styles.weather_prediction_month}>
                             {props.month} {props.date}
                         </h5>
-                        <p className={Styles.weather_prediction_desc}>Cloudy</p>
+                        <p className={Styles.weather_prediction_desc}>{props.desc}</p>
                     </div>
                 </div>
             </div>
