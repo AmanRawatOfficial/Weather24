@@ -13,6 +13,14 @@
     color: wheat;
 }
 
+.other_data_main_desc {
+    color: black;
+    background: rgba(188, 235, 71, 0.836);
+    margin: 0.2rem;
+    padding: 0 0.6rem;
+    border-radius: 6px;
+}
+
 .other_data_main_icon {
     font-size: 3.6rem;
     display: flex;

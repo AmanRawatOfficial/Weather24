@@ -2,4 +2,12 @@
     background: rgb(21, 7, 68);
     margin: 0 4rem 4rem 4rem;
     height: 52%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.weather_prediction_box {
+    background: wheat;
+    border-radius: 12px;
 }

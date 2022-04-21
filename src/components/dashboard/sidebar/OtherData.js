@@ -30,7 +30,7 @@ function OtherData() {
                 </div>
                 <div className={Styles.other_data_main_info}>
                     <p className={Styles.other_data_main_info_uv}>
-                        {uvi} UVI <span>{uviDesc}</span>
+                        {uvi} UVI <span className={Styles.other_data_main_desc}>{uviDesc}</span>
                     </p>
                     <p>
                         {uviDesc} risk of from UV Rays
@@ -43,7 +43,7 @@ function OtherData() {
                 </div>
                 <div className={Styles.other_data_main_info}>
                     <p className={Styles.other_data_main_info_uv}>
-                        {windSpeed} m/s <span>{windDesc}</span>
+                        {windSpeed} m/s <span className={Styles.other_data_main_desc}>{windDesc}</span>
                     </p>
                 </div>
             </div>
