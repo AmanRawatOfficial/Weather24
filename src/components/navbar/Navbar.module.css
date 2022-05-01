@@ -24,6 +24,7 @@ li {
 
 .nav_list {
     font-size: 3rem;
+    margin-top: 3rem;
 }
 
 .nav_list_icons {
@@ -39,3 +40,7 @@ li {
     color: white;
 }
 
+button {
+    background: transparent;
+    border: none
+}
