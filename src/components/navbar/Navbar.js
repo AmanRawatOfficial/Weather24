@@ -13,9 +13,9 @@ function Navbar() {
 
     return (
         <nav className={`${Styles.sidebar} ${darkmodeCheck}`}>
-            <div className={Styles.logo_content}>
+            <div>
                 <div className={Styles.logo}>
-                    <Link to="/dashboard">
+                    <Link to="/">
                         <i
                             className={`bx bx-cloud ${Styles.logo_icon} ${darkmodeCheckFont}`}
                         ></i>
@@ -31,14 +31,14 @@ function Navbar() {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/map">
+                    <Link to="/location">
                         <i
                             className={`bx bx-map ${Styles.nav_list_icons} ${darkmodeCheckFont}`}
                         ></i>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/calender">
+                    <Link to="/calendar">
                         <i
                             className={`bx bx-calendar ${Styles.nav_list_icons} ${darkmodeCheckFont}`}
                         ></i>
