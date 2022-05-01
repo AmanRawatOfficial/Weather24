@@ -47,7 +47,7 @@ function Dashboard() {
 
             // Data fetching for Daily weather forecast
             fetch(
-                `https://api.weatherbit.io/v2.0/forecast/daily?lat=${location.coords.latitude}&lon=${location.coords.longitude}&days=5&key=db73e48c3eea4c5c8ae4b44ef77dfe46`
+                `https://api.weatherbit.io/v2.0/forecast/daily?lat=${location.coords.latitude}&lon=${location.coords.longitude}&days=16&key=db73e48c3eea4c5c8ae4b44ef77dfe46`
             )
                 .then((dailyRes) => dailyRes.json())
                 .then((dailyRes) => {
