@@ -1,10 +1,14 @@
-import React from 'react'
-import Dashboard from './container/Dashboard'
+import React from "react";
+import Navbar from "./components/navbar/Navbar";
+import Dashboard from "./container/Dashboard";
 
 const App = () => {
-  return (
-    <Dashboard />
-  )
-}
+    return (
+        <>
+            <Navbar />
+            <Dashboard />
+        </>
+    );
+};
 
-export default App
+export default App;
