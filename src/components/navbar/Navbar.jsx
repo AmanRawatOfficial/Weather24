@@ -6,7 +6,7 @@ function Navbar() {
         <nav>
             <div>
                 <div>
-                    <Link to="/">
+                    <Link to="/dashboard">
                         <i
                             className={`bx bx-cloud`}
                         ></i>
