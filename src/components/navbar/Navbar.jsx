@@ -1,14 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom"
 
+import "./Navbar.css"
+
 function Navbar() {
     return (
-        <nav>
+        <nav className="sidebar">
             <div>
                 <div>
                     <Link to="/dashboard">
                         <i
-                            className={`bx bx-cloud`}
+                            className={`bx bx-cloud sidebar-icon`}
                         ></i>
                     </Link>
                 </div>
@@ -17,21 +19,21 @@ function Navbar() {
                 <li>
                     <Link to="/dashboard">
                         <i
-                            className={`bx bx-grid-alt`}
+                            className={`bx bx-grid-alt sidebar-icon`}
                         ></i>
                     </Link>
                 </li>
                 <li>
                     <Link to="/location">
                         <i
-                            className={`bx bx-map`}
+                            className={`bx bx-map sidebar-icon`}
                         ></i>
                     </Link>
                 </li>
                 <li>
                     <Link to="/calendar">
                         <i
-                            className={`bx bx-calendar`}
+                            className={`bx bx-calendar sidebar-icon`}
                         ></i>
                     </Link>
                 </li>
@@ -39,7 +41,7 @@ function Navbar() {
             <button
             >
                 <i
-                    className={`bx bx-moon`}
+                    className={`bx bx-moon sidebar-icon`}
                 ></i>
             </button>
         </nav>

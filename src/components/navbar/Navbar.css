@@ -1,0 +1,9 @@
+.sidebar {
+    background: rgb(219, 219, 219);
+    width: 8rem;
+}
+
+.sidebar-icon {
+    color: gray;
+    font-size: 40px;
+}
