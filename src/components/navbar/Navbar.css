@@ -1,9 +1,82 @@
-.sidebar {
-    background: rgb(219, 219, 219);
-    width: 8rem;
+/* Helper Classes*/
+
+.menu {
+    display: none !important; /* Could be problem in future */
 }
+
+/* Main Classes*/
+.sidebar {
+    width: 8rem;
+    height: 100vh; /* Can be a problem */
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.103);
+}
+
+/* LOGO */
+
+.sidebar-logo-box,
+.sidebar-icon-box {
+    /* For Both LOGO & ICONS*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-logo {
+    color: orange;
+    font-size: 60px;
+}
+
+/* ICONS */
 
 .sidebar-icon {
     color: gray;
     font-size: 40px;
+    margin-top: 44px;
+}
+
+.sidebar-icon:hover {
+    color: orange;
+}
+
+/* BUTTON */
+
+.sidebar-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Media Queries*/
+
+@media screen and (max-width: 800px) {
+    .sidebar {
+        width: 100%;
+        height: 8rem;
+        
+        /* New Flex Property for sidebar*/
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 98px;
+    }
+
+    .sidebar ul {
+        gap: 44px;
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar-icon {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .link-icon {
+        display: none !important;
+    }
+    
+    .menu {
+        display: inline-block !important;
+    }
 }

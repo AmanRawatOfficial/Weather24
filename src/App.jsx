@@ -13,6 +13,7 @@ const App = () => {
         <div className="app">
             <Navbar />
             <Routes>
+                <Route path="" element={<h1>Welcome</h1>} />
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/location" element={<Location />} />
                 <Route path="/calendar" element={<Calendar />} />
