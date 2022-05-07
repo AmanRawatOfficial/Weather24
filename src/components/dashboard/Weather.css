@@ -1,0 +1,29 @@
+.weather-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 2rem 1rem 2rem;
+}
+
+.weather-details {
+    background: rgb(0, 73, 102);
+    border-radius: 6px;
+    padding: 5px 20px 5px 20px;
+}
+
+.weather-detail-heading {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.weather-detail-data {
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Media Queries*/
+
+@media screen and (max-width: 800px) {
+    .weather-details {
+        padding: 5px 30px 5px 30px;
+    }
+}

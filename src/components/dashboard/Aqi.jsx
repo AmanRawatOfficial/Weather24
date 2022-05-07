@@ -8,7 +8,13 @@ function Weather() {
         <DashboardComponent
             heading="Air Quality"
             description="What's air quality"
-        />
+            dataOne="220"
+            dataTwo="AQI"
+        >
+            <div className="aqi-container">
+                    <p>Unhealthy</p>
+            </div>
+        </DashboardComponent>
     );
 }
 

@@ -16,8 +16,8 @@ function DashboardComponent(props) {
             </div>
             <div className="data-container">
                 <div className="data">
-                    <p className="data-temp">22C</p>
-                    <p className="data-desc">Haze</p>
+                    <p className="data-temp">{props.dataOne}</p>
+                    <p className="data-desc">{props.dataTwo}</p>
                 </div>
                 <p>Partly Cloudy</p>
             </div>
