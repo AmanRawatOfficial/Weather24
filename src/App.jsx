@@ -7,13 +7,14 @@ import Navbar from "./components/navbar/Navbar";
 import Dashboard from "./components/dashboard/Dashboard";
 import Location from "./components/location/Location";
 import Calendar from "./components/calendar/Calendar";
+import Welcome from "./components/Welcome";
 
 const App = () => {
     return (
         <div className="app">
             <Navbar />
             <Routes>
-                <Route path="" element={<h1>Welcome</h1>} />
+                <Route path="" element={<Welcome />} />
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/location" element={<Location />} />
                 <Route path="/calendar" element={<Calendar />} />
